@@ -100,48 +100,30 @@ header h3 {
 }
 
 ul {
-   float: left;
-   margin-left: 435px;
+ float: left;
+ margin-left: 435px;
 }
 
 ul, li {
-   float: right;
-   padding-left: 10px;
-   padding-right: 30px;
+ float: right;
+ padding-left: 10px;
+ padding-right: 30px;
 }
 
 li a {
-   font-family: 'Exo', sans-serif;
-   font-size: 15px;
-   width: 935px;
-   color: white;
-   text-decoration: none;
-   z-index: 10;
+ font-family: 'Exo', sans-serif;
+ font-size: 15px;
+ width: 935px;
+ color: white;
+ text-decoration: none;
+ z-index: 10;
 }
 
 div#container {
-  width: 100%;
-  display: inline-block;
-  margin-top: 50px;
-  margin-left: 75px;
-}
-
-
-div#container > div > a > img {
-  background-repeat: no-repeat;
-  background-position: center;
-  display: inline-block;
-  float: left;
-  box-shadow: 0 0 5px rgba(70,70,70,0.7);
-}
-
-div#container > div {
-  background: none;
-  display: inline-block;
-  position: relative;
-  margin-top: ;
-  margin-right: ;
-}
+ width: 100%;
+ display: inline-block;
+ margin-top: 50px;
+ margin:left;
  
 html, body {
  height: 100%;
@@ -150,9 +132,11 @@ html, body {
  margin: 0;
 }
 
-div#footer {
-width: 64em;
-border-top-color: white; 
-padding-top: 15px;
-float: right;
+footer {
+ font-family: 'Exo', sans-serif;
+ font-size: 15px;
+ width: 64em;
+ border-top-color: white; 
+ padding-top: 15px;
+ float: right;
 }
