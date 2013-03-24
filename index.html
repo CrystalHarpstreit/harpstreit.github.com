@@ -1,6 +1,31 @@
 <!doctype html>
 <html lang="en">
 <head>
+<!-- Fancybox -->
+<!-- Add jQuery library -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<!-- Add mousewheel plugin (this is optional) -->
+  <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox -->
+  <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen" />
+  <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.4"></script>
+
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+  <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+  <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+  <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+
+  <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+  <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+</script>
+<!-- End Fancybox -->
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta charset="utf-8">
   <title>My Portfolio</title>
@@ -9,34 +34,33 @@
   <!--[if lt IE 9]>
   <![endif]-->
 </head>
+<link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
 <link href='http://fonts.googleapis.com/css?family=Exo:100,400' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Miss+Fajardose' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=League+Script|Miss+Fajardose' rel='stylesheet' type='text/css'>
 <body>
-<header>
-    <h1>the</h1>
-    <h2>Superb</h2>
-    <h3>owl</h3>
-<div id="menu">
-  <ul>
-    <li id="home">
-      <a href="">home
-      </a>
-    </li>
-    <li id="contact">
-      <a href="">contact
-      </a>
-    </li>
-    <li id="about">
-        <a href="">about
-        </a>
-    </li>
-  </div>
+<header class="clearfix">
+    <h1><span class="the">the</span><br />
+      <span class="superb">Superb<br />
+      <span class="owl">owl</h1>
 </header>
-<div id="container">	
-</div>		
-<footer>
-  Design by Crystal Harpstreit 
-</footer>		
+<div id="container" class= "clearfix">
+  <div class="art cat"><a class="fancybox" rel="group" href="http://farm9.staticflickr.com/8240/8455287708_52f25434de_b.jpg">
+  <img src="images/TinyCat.jpg" alt="Arroba"/></a>
+  </div>
+  <div class="art"><a class="fancybox" rel="group" href="http://farm9.staticflickr.com/8224/8298655665_a8874795d0_b.jpg"><img src="images/SugarSkullCrop.JPG" alt="Sugar Skull Vector"/></a>
+  </div>
+  <div class="art rapha"><a class="fancybox" rel="group" href=""></a><img src="images/RyansHillzClip.jpg" alt="Festive 500 Poster"/>
+  </div>
+  <div class="art swan"><a class="fancybox" rel="group" href="http://farm9.staticflickr.com/8355/8299670140_e5665d8585_b.jpg"><img src="images/SwanPattern.jpg" alt="Swan Pattern"/></a>
+  </div> 
+  <div class="art mouse"><a class="fancybox" rel="group" href="http://farm9.staticflickr.com/8223/8298652383_487002b810_b.jpg"><img src="http://farm9.staticflickr.com/8382/8460868830_c1b7c607ec.jpg"/></a>
+  </div>
+  <div class="art bokehs"><a class="fancybox" rel="group" href="http://farm9.staticflickr.com/8219/8298655757_508ce06bb3_b.jpg"><img src="http://farm9.staticflickr.com/8368/8457921648_0403780c15.jpg"/></a>
+  </div>
+</div>
+  <footer class="clearfix">
+    <p><span class="design">design by Crystal Harpstreit</span><span class="email">crystal.harpstreit@gmail.com</span><span class="phone">415.710.0792</span></p>
+  </footer>	
 </body>
 </html>

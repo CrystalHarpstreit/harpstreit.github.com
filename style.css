@@ -1,4 +1,5 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+
++/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -51,80 +52,6 @@ table {
     border-spacing: 0;
 }
 
-body {
-background-color: #C5E7EA;
-}
-
-header {
-  background-color: #2d2c72;
-  opacity: .85;
-  display: inline-block;
-  width: 100%;
-  height: 180px;
-  z-index: 5000;
- 
-  background-image: -webkit-gradient(
-	  linear,
-	  left bottom,
-	  left top,
-	  color-stop( #C5E7EA)),
-	  color-stop( #C5E7EA))
-  );
-
-  -webkit-box-shadow: 0px 3px 5px rgba(50, 50, 50, 0.5);
-  -moz-box-shadow:    0px 3px 5px rgba(50, 50, 50, 0.5);
-  box-shadow:         0px 3px 5px rgba(50, 50, 50, 0.5);
-}
-
-header h1 {
-  font-family: 'Exo', sans-serif;
-  font-size: 25px;
-  color: white;
-  margin-left: 55px;
-  margin-top: 10px;
-}
-
-header h2 {
-  font-family: 'Miss Fajardose', cursive;
-  font-size: 115px;
-  color: white;
-  margin-left:55px;
-  border-bottom: 1px dotted #fff;
-}
-
-header h3 {
-  font-family: 'Exo', sans-serif;
-  font-size: 25px;
-  color: white;
-  margin-left: 200px;
-}
-
-ul {
- float: left;
- margin-left: 435px;
-}
-
-ul, li {
- float: right;
- padding-left: 10px;
- padding-right: 30px;
-}
-
-li a {
- font-family: 'Exo', sans-serif;
- font-size: 15px;
- width: 935px;
- color: white;
- text-decoration: none;
- z-index: 10;
-}
-
-div#container {
- width: 100%;
- display: inline-block;
- margin-top: 50px;
- margin:left;
- 
 html, body {
  height: 100%;
  width: 100%;
@@ -132,11 +59,102 @@ html, body {
  margin: 0;
 }
 
+/* For modern browsers */
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.container {
+    zoom:1;
+}
+
+/* Main Styling */
+
+body {
+background-color: #C5E7EA;
+}
+
+header {
+  background-color: #2d2c72;
+  opacity: .85;
+  height: 180px;
+  z-index: 5000;
+  overflow: hidden;
+  position: relative;   
+
+  -webkit-box-shadow: 0px 3px 5px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow:    0px 3px 5px rgba(50, 50, 50, 0.5);
+  box-shadow:         0px 3px 5px rgba(50, 50, 50, 0.5);
+}
+
+header:after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: 35px;
+  border-bottom: 1px dotted white; 
+  opacity: .85;
+}
+
+.the, .owl {
+  font-family: 'Exo', sans-serif;
+  font-size: 25px;
+  color: white;
+  margin-left: 55px;
+}
+
+span.owl {
+  position: relative;
+  bottom: 84px;
+  left: 156px;
+}
+
+span.superb {
+  font-family: 'Miss Fajardose', cursive;
+  font-size: 115px;
+  color: white;
+  margin-left: 55px; 
+}
+
+div#container.clearfix {
+ margin: 20px 35px 20px 35px;
+}
+
+div.art {
+  display: inline-block;
+}
+
 footer {
+ background-color: #2d2c72;
  font-family: 'Exo', sans-serif;
  font-size: 15px;
- width: 64em;
- border-top-color: white; 
- padding-top: 15px;
- float: right;
+ padding-top: 20px;
+ color: white;
+ opacity: .85;
+ height: 60px;   /* Height of the footer */
+ text-align: center;
+}
+
+footer > p {
+ display: inline;
+}
+
+p.contact {
+ display: inline-block;
+}
+
+span.design { 
+}
+
+span.email {
+ padding-left: 100px;
+}
+
+span.phone {
+ padding-left: 100px;
 }
