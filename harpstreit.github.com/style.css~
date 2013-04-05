@@ -122,20 +122,12 @@ span.superb {
   margin-left: 55px; 
 }
 
-.header-img {
+.header-img: {
   position: absolute;
-  top: 15px;
-  left: 295px;
-  width: 95px;
-  display: inline-block;
-}
-
-.header-img > img {
-  max-width: 100%;
 }
 
 div#container.clearfix {
- margin: 35px 0px 10px 35px;
+ margin: 10px 0px 10px 35px;
 }
 
 div.art {
@@ -154,7 +146,6 @@ div#circle {
  padding-bottom: 10px;
  text-align: center;
  margin-left: 475px;
- margin-top: 100px;
  
   -webkit-box-shadow: 0px 3px 5px rgba(50, 50, 50, 0.5);
   -moz-box-shadow:    0px 3px 5px rgba(50, 50, 50, 0.5);
@@ -179,7 +170,6 @@ footer {
 
 footer > p {
  display: inline;
- margin-right: 125px;
 }
 
 p.contact {
